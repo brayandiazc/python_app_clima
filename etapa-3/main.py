@@ -1,3 +1,5 @@
+# Etapa 3: Creación y Uso de Métodos
+
 # Importar métodos
 from clima_metodos import mostrar_recomendacion, guardar_en_archivo
 
