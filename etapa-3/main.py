@@ -1,6 +1,6 @@
-# Etapa 3: Creación y Uso de Métodos
+# Etapa 3: Creación y Uso de Funciones
 
-# Importar métodos
+# Importar funciones
 from clima_metodos import mostrar_recomendacion, guardar_en_archivo
 
 # Bienvenida e inicio del programa
