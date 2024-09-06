@@ -66,13 +66,21 @@ class Clima:
         temperatura (float): La temperatura actual en grados Celsius.
 
         Comportamiento:
-        - Si la temperatura es mayor o igual a 30°C, recomienda usar protector solar.
-        - Si la temperatura está entre 20°C y 29°C, indica que el clima es agradable.
-        - Si la temperatura es menor a 20°C, sugiere llevar abrigo.
+        - Si la temperatura es mayor o igual a 30°C, imprime un mensaje indicando que hace mucho calor, incluye un emoji de calor 🔥, y recomienda el uso de protector solar e hidratación.
+        - Si la temperatura está entre 20°C y 29°C, imprime un mensaje indicando que el clima es agradable, incluye un emoji de sonrisa 😊, y sugiere disfrutar del día.
+        - Si la temperatura es menor a 20°C, imprime un mensaje indicando que hace frío, incluye un emoji de nieve ❄️, y recomienda llevar abrigo.
+
+        El mensaje también incluye la temperatura exacta proporcionada por el usuario.
         """
         if temperatura >= 30:
-            print("¡Hace mucho calor! Recuerda usar protector solar.")
+            print(
+                f"🔥 ¡Hace mucho calor! La temperatura es de {temperatura}°C. No olvides aplicar protector solar y mantenerte hidratado."
+            )
         elif temperatura >= 20:
-            print("El clima es agradable, puedes salir sin problemas.")
+            print(
+                f"😊 El clima es bastante agradable con {temperatura}°C. ¡Es un buen momento para salir y disfrutar del día!"
+            )
         else:
-            print("Hace frío, no olvides llevar abrigo.")
+            print(
+                f"❄️ Hace un poco de frío, con {temperatura}°C. No olvides llevar un abrigo para mantenerte cómodo."
+            )

@@ -6,7 +6,7 @@ from clima import Clima
 
 
 # Bienvenida e inicio del programa
-print("¡Bienvenido al sistema de clima!")
+print("🌤️ ¡Bienvenido al sistema de clima!")
 consultas = []
 continuar = True
 

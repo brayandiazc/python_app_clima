@@ -1,7 +1,7 @@
 # Etapa 2: Uso de Ciclos e Iteraciones
 
 # Bienvenida e inicio del programa
-print("¡Bienvenido al sistema de clima!")
+print("🌤️ ¡Bienvenido al sistema de clima!")
 continuar = True
 
 # Ciclo principal
@@ -11,11 +11,17 @@ while continuar:
 
     # Control de flujo básico
     if temperatura >= 30:
-        print("¡Hace mucho calor! Recuerda usar protector solar.")
+        print(
+            f"🔥 ¡Hace mucho calor! La temperatura es de {temperatura}°C. No olvides aplicar protector solar y mantenerte hidratado."
+        )
     elif temperatura >= 20:
-        print("El clima es agradable, puedes salir sin problemas.")
+        print(
+            f"😊 El clima es bastante agradable con {temperatura}°C. ¡Es un buen momento para salir y disfrutar del día!"
+        )
     else:
-        print("Hace frío, no olvides llevar abrigo.")
+        print(
+            f"❄️ Hace un poco de frío, con {temperatura}°C. No olvides llevar un abrigo para mantenerte cómodo."
+        )
 
     # Pregunta si desea continuar
     respuesta = input("¿Desea consultar otra temperatura? (si/no): ").strip().lower()

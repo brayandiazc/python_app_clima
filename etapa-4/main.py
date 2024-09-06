@@ -4,7 +4,7 @@
 from funciones_clima import mostrar_recomendacion, guardar_en_archivo
 
 # Bienvenida e inicio del programa
-print("¡Bienvenido al sistema de clima!")
+print("🌤️ ¡Bienvenido al sistema de clima!")
 consultas = []
 continuar = True
 
