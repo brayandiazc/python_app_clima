@@ -1,7 +1,8 @@
-# Etapa 6: Consumo de APIs
+# Etapa 7: Programación Orientada a Objetos
 
 # Importar funciones
-from funciones_clima import obtener_clima, mostrar_recomendacion, guardar_en_archivo
+from funciones_clima import guardar_en_archivo
+from clima import Clima
 
 
 # Bienvenida e inicio del programa
@@ -13,14 +14,14 @@ while continuar:
     # Ingreso de ciudad
     ciudad = input("\nIngrese el nombre de la ciudad: ").strip()
 
-    # Obtener la temperatura desde una API
-    temperatura = obtener_clima(ciudad)
+    # Crear una instancia de la clase Clima
+    clima = Clima(ciudad)
 
-    # Llamar al método para mostrar la recomendación
-    mostrar_recomendacion(temperatura)
+    # Obtener la temperatura y mostrar la recomendación
+    clima.obtener_y_mostrar_clima()
 
-    # Guardar la consulta en la lista y en el archivo CSV
-    consulta = {"ciudad": ciudad, "temperatura": temperatura}
+    # Guardar la consulta en un diccionario y luego en el archivo CSV
+    consulta = {"ciudad": ciudad, "temperatura": clima.temperatura}
     consultas.append(consulta)
     guardar_en_archivo(consulta["ciudad"], consulta["temperatura"])
 
