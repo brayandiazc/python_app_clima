@@ -1,7 +1,7 @@
 # Etapa 3: Creación y Uso de Funciones
 
 # Importar funciones
-from clima_metodos import mostrar_recomendacion, guardar_en_archivo
+from funciones_clima import mostrar_recomendacion, guardar_en_archivo
 
 # Bienvenida e inicio del programa
 print("¡Bienvenido al sistema de clima!")

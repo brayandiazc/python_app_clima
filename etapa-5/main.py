@@ -1,8 +1,8 @@
 # Etapa 5: Uso de Diccionarios
 
 # Importar funciones
-from clima_metodos import mostrar_recomendacion, guardar_en_archivo
-from clima_ciudades import crear_consulta
+from funciones_clima import mostrar_recomendacion, guardar_en_archivo
+from funciones_ciudades_temperatura import crear_consulta
 
 # Bienvenida e inicio del programa
 print("¡Bienvenido al sistema de clima!")

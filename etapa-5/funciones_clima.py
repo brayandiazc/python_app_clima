@@ -49,6 +49,6 @@ def guardar_en_archivo(ciudad, temperatura):
     - Asegúrate de manejar cualquier excepción relacionada con el acceso a archivos o la escritura
         en CSV si fuera necesario en otros contextos.
     """
-    with open("etapa-4/data.csv", mode="a+", newline="") as file:
+    with open("etapa-5/data.csv", mode="a+", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([ciudad, temperatura, datetime.now()])
