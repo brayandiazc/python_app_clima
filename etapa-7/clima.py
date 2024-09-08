@@ -52,7 +52,7 @@ class Clima:
         Nota:
         - Maneja potenciales excepciones relacionadas con la solicitud HTTP y los datos devueltos.
         """
-        api_key = "416d61cf84dff5e1074b6bff040d0caa"
+        api_key = "OPENWEATHER_API_KEY"
         url = f"http://api.openweathermap.org/data/2.5/weather?q={ciudad}&appid={api_key}&units=metric"
         response = requests.get(url)
         data = response.json()
